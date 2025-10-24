@@ -1,5 +1,8 @@
 import bannerImage from "../src/assets/banner.png"
+import { clearPage } from "./clearPage";
 import { footer } from "./footer";
+import { loadMenu } from "./menu";
+
 export const homePage = function createHomePage() {
     const content = document.getElementById("content");
 
@@ -20,8 +23,14 @@ export const homePage = function createHomePage() {
     message.id = "message";
     content.append(message);
 
-    const menu = document.createElement("p");
+    const menu = document.createElement("button");
     menu.id = "menu";
     menu.innerHTML = "Explore Menu"
     content.append(menu)
+    menu.addEventListener("click",(e)=>{
+        clearPage();
+        loadMenu();
+    })
+    
+    footer()
 }

@@ -1,13 +1,7 @@
 import "./styles.css"
 import { homePage } from "./homepage.js"
 import {loadMenu} from"./menu.js"
-import {footer} from "./footer.js"
-function clearPage(){
-    document.getElementById("content");
-    content.innerHTML="";
-    document.getElementById("footer");
-    footer.innerHTML="";
-}
+import {clearPage} from "./clearPage.js"
 
 //home button
 
@@ -29,4 +23,3 @@ menu.addEventListener("click",(e)=>{
 
 //initial load
 homePage()
-footer()

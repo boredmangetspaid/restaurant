@@ -1,3 +1,7 @@
-export const loadMenu = function loadMenu(){
-    console.log("hi")
+import { footer } from "./footer"
+
+export const loadMenu = function loadMenu() {
+
+    
+   footer() 
 }
