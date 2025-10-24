@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #F7F0E6;
+    margin: 0px;
+    height: 100%;
+    padding: 0px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 1em 4em;
+    justify-content: space-between;
+}
+
+#header nav {
+    display: flex;
+    gap: 1em;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #F7F0E6;
+    font-size: 26px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+img {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+
+}
+
+#slogan {
+    font-weight: bold;
+    font-size: 5em;
+    text-align: center;
+}
+
+#message {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+    line-height: 1.5em;
+
+}
+
+#content {
+    position: relative;
+    height: 100%;
+    color: #F7F0E6;
+    z-index: 1;
+}
+
+#content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../src/assets/content-background.png);
+    background-size: cover;
+    background-position-y: 300px;
+    z-index: -1;
+    filter: contrast(75%);
+}
+
+#menu {
+    display:block;
+    margin:0 auto;
+    color: #3B3B3B;
+    font-size: 3em;
+    background: #C9A37E;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5A3825;
+    color: #F7F0E6;
+    font-size: 2em;
+    height: 25vh;
+}
