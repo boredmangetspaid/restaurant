@@ -82,7 +82,7 @@ img {
 
 #menu {
     display:block;
-    margin:0 auto;
+    margin:100px auto;
     color: #3B3B3B;
     font-size: 3em;
     background: #C9A37E;
@@ -99,5 +99,6 @@ footer {
     background-color: #5A3825;
     color: #F7F0E6;
     font-size: 2em;
-    height: 25vh;
+    height: 20vh;
+    padding:20px;
 }
