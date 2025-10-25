@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
+*{
+    box-sizing: border-box;
+}
 html {
     box-sizing: border-box;
     margin: 0px;
@@ -12,7 +14,9 @@ body {
     background-color: #F7F0E6;
     margin: 0px;
     height: 100%;
-    padding: 0px;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
 }
 
 #header {
@@ -102,3 +106,20 @@ footer {
     height: 20vh;
     padding:20px;
 }
+#menuContainer{
+    
+    width:50vw;
+    border:3px black solid;
+    background-color:#F7F0E6;
+    margin:10px auto;
+}
+.menuItem {
+    width: 500px;
+    height:500px;
+    color:black;
+    padding:50px;
+}
+.menuItem img{
+    border-radius:30px;
+}
+
