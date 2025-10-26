@@ -136,8 +136,7 @@ footer {
   }
 }
 .menuItem {
-    width: auto;
-    height: 300px;
+    width:auto; 
     color: black;
     text-align: center;
     line-height: 10px;
