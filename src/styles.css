@@ -115,9 +115,7 @@ footer {
 }
 
 #menuContainer {
-    display: grid;
-    grid-template-columns:auto auto auto;
-    justify-items: center;
+
     width: 75vw;
     border: 3px black solid;
     background-color: #F7F0E6;
@@ -125,16 +123,30 @@ footer {
     min-height: auto;
 }
 
+.menuTitle{
+    color:black;
+    text-align: center;
+    font-size:2.5em;
+}
+
+#bagelContainer,#sandwichContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
 @media (max-width: 900px) {
-  #menuContainer {
-    grid-template-columns: auto auto;
-  }
+    #bagelContainer,#sandwichContainer {
+        grid-template-columns: auto auto;
+    }
 }
-@media (max-width: 600px) {
-  #menuContainer {
-    grid-template-columns: auto ;
-  }
+
+@media (max-width: 700px) {
+    #bagelContainer,#sandwichContainer {
+        grid-template-columns: auto;
+    }
 }
+
 .menuItem {
     color: black;
     text-align: center;
@@ -144,5 +156,5 @@ footer {
 
 .menuItem img {
     border-radius: 40px;
-    height:300px;
+    height: 300px;
 }

@@ -17,33 +17,51 @@ export const loadMenu = function loadMenu() {
    const menuContainer = document.createElement("div");
    menuContainer.id = "menuContainer";
 
+   const bagelContainer = document.createElement("div");
+   bagelContainer.id = "bagelContainer";
+
+   const sandwichContainer = document.createElement("div");
+   sandwichContainer.id = "sandwichContainer";
+
    //classic bagels
    const plainBagel = menuItem("Classic Plain Bagel", "$2.50", plainBagelImage);
-   const multiGrainBagel= menuItem("Multi Grain Bagel", "$2.50", multiBagelImage);
-   const poppyBagel= menuItem("Poppy Bagel", "$2.50", PoppyBagelImage);
-   const cinnamonRaisinBagel= menuItem("Multi-grain Bagel", "$2.50", cinnamonBagelImage);
-   const sesameBagel= menuItem("Sesame Seed Bagel", "$2.50", sesameBagelImage);
+   const multiGrainBagel = menuItem("Multi Grain Bagel", "$2.50", multiBagelImage);
+   const poppyBagel = menuItem("Poppy Bagel", "$2.50", PoppyBagelImage);
+   const cinnamonRaisinBagel = menuItem("Multi-grain Bagel", "$2.50", cinnamonBagelImage);
+   const sesameBagel = menuItem("Sesame Seed Bagel", "$2.50", sesameBagelImage);
 
-   const bagelMenu = [plainBagel,multiGrainBagel,poppyBagel,cinnamonRaisinBagel,sesameBagel];
-   
-   for (const bagel of bagelMenu){
-      menuContainer.appendChild(bagel)
+   const bagelMenu = [plainBagel, multiGrainBagel, poppyBagel, cinnamonRaisinBagel, sesameBagel];
+
+   for (const bagel of bagelMenu) {
+      bagelContainer.appendChild(bagel)
    }
+
 
    //bagel sandwiches
-  
+
    const baconAndCheese = menuItem("Bacon and Cheese Sandwich", "$5.50", baconAndCheeseSandwichImage);
    const lox = menuItem("Lox Sandwich", "$5.50", loxSandwichImage);
-   const pulledPork= menuItem("Pulled Pork Sandwich", "$5.50", pulledPorkSandwichImage);
-   const turkeyClub= menuItem("Turkey Club Sandwich", "$5.50", turkeyClubSandwichImage);
-   const bltSandwich= menuItem("BLT Sandwich", "$5.50", bltSandwichImage);
+   const pulledPork = menuItem("Pulled Pork Sandwich", "$5.50", pulledPorkSandwichImage);
+   const turkeyClub = menuItem("Turkey Club Sandwich", "$5.50", turkeyClubSandwichImage);
+   const bltSandwich = menuItem("BLT Sandwich", "$5.50", bltSandwichImage);
 
-   const sandwichMenu= [baconAndCheese,lox,pulledPork,turkeyClub,bltSandwich]
-   
-   for (const sandwich of sandwichMenu){
-      menuContainer.appendChild(sandwich)
+   const sandwichMenu = [baconAndCheese, lox, pulledPork, turkeyClub, bltSandwich]
+
+   for (const sandwich of sandwichMenu) {
+      sandwichContainer.appendChild(sandwich)
    }
+   const bagelTitle = document.createElement("h1");
+   bagelTitle.innerHTML = "Classic Bagels";
+   bagelTitle.classList.add("menuTitle");
 
-   content.appendChild(menuContainer)
+   const sandwichTitle = document.createElement("h1");
+   sandwichTitle.innerHTML = "Bagel Sandwiches";
+   sandwichTitle.classList.add("menuTitle");
+   
+   menuContainer.appendChild(bagelTitle);
+   menuContainer.appendChild(bagelContainer);
+   menuContainer.appendChild(sandwichTitle);
+   menuContainer.appendChild(sandwichContainer);
+   content.appendChild(menuContainer);
    footer()
 }
