@@ -158,3 +158,12 @@ footer {
     border-radius: 40px;
     height: 300px;
 }
+
+.about {
+    color:#F7F0E6;
+    font-size:30px;
+    background-color:#C9A37E;
+    width:75vw;
+    text-align:center;
+    margin:auto;
+}
