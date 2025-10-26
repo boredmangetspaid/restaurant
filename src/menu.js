@@ -27,7 +27,7 @@ export const loadMenu = function loadMenu() {
    const plainBagel = menuItem("Classic Plain Bagel", "$2.50", plainBagelImage);
    const multiGrainBagel = menuItem("Multi Grain Bagel", "$2.50", multiBagelImage);
    const poppyBagel = menuItem("Poppy Bagel", "$2.50", PoppyBagelImage);
-   const cinnamonRaisinBagel = menuItem("Multi-grain Bagel", "$2.50", cinnamonBagelImage);
+   const cinnamonRaisinBagel = menuItem("Cinnamon Raisin Bagel", "$2.50", cinnamonBagelImage);
    const sesameBagel = menuItem("Sesame Seed Bagel", "$2.50", sesameBagelImage);
 
    const bagelMenu = [plainBagel, multiGrainBagel, poppyBagel, cinnamonRaisinBagel, sesameBagel];
@@ -57,7 +57,7 @@ export const loadMenu = function loadMenu() {
    const sandwichTitle = document.createElement("h1");
    sandwichTitle.innerHTML = "Bagel Sandwiches";
    sandwichTitle.classList.add("menuTitle");
-   
+
    menuContainer.appendChild(bagelTitle);
    menuContainer.appendChild(bagelContainer);
    menuContainer.appendChild(sandwichTitle);
